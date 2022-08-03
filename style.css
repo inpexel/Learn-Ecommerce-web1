@@ -52,6 +52,7 @@ nav{
     font-size: 1.8rem;
     color: white;
     transition: all 300ms ease;
+    cursor: pointer;
 }
 
 .btn-primary{
@@ -67,6 +68,7 @@ nav{
 }
 
 .cart{
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -78,14 +80,35 @@ nav{
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    overflow-y: auto;
     z-index: 10;
 }
 
-.black{
-    background-color: rgba(0, 0, 0, 0.134);
+.closeCart{
     position: absolute;
-    top: 0;right: 0;bottom: 0;left: 0;
-    z-index: 1;
+    top: 5px;left: 10px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.cart ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart li{
+    list-style-type: none;
+}
+
+.black{
+    display: none;
+    position: absolute;
+    top: 0;bottom: 0;right: 0;left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .cartProduct{
@@ -101,7 +124,7 @@ nav{
 }
 
 .cartProduct input[type=number]{
-    width: 80px;
+    width: 36px;
     cursor: pointer;
 }
 

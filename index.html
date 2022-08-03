@@ -4,28 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
     <title>Ecommerce 1</title>
   </head>
   <body>
+
+    <div class="black"></div>
     <div class="cart">
-      <div class="black"></div>
-      <div class="cartProduct">
-        <p class="close">x</p>
-        <img
-          src="https://m.media-amazon.com/images/I/71yTvU9VgdL._AC_UY327_FMwebp_QL65_.jpg"
-          alt=""
-        />
-        <h2>product name</h2>
-        <h2 class="prise">₹250</h2>
-        <input type="number" name="count" id="count" value="1" />
-      </div>
+      <div class="closeCart">&raquo;</div>
+      <ul>
+        <li>
+          <div class="cartProduct">
+            <p class="close">x</p>
+            <img
+              src="https://m.media-amazon.com/images/I/71yTvU9VgdL._AC_UY327_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <h2>product name</h2>
+            <h2 class="prise">₹250</h2>
+            <input type="number" name="count" id="count" value="1" />
+          </div>
+        </li>
+        <li>
+          <div class="cartProduct">
+            <p class="close">x</p>
+            <img
+              src="https://m.media-amazon.com/images/I/81-fFXQdPTL._AC_UY327_FMwebp_QL65_.jpg"
+              alt=""
+            />
+            <h2>product name</h2>
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <input type="number" name="count" id="count" value="1" />
+          </div>
+        </li>
+      </ul>
     </div>
 
     <nav>
       <h2>MENU</h2>
-      <h2>CART</h2>
+      <!-- <h2>CART</h2> -->
+      <span class="material-icons">local_mall</span>
     </nav>
     <div class="productContainer">
       <div class="product">
@@ -72,5 +92,6 @@
         <button class="btn btn-secondry">buy Now</button>
       </div>
     </div>
+
   </body>
 </html>
